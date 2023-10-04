@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+#education{
+  margin-bottom: 5%;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -325,3 +328,15 @@ body{
       margin-top: 10px; 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+

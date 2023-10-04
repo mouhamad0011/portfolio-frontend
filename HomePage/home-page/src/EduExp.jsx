@@ -36,8 +36,8 @@ const EduExp = ({ data, section }) => {
  
 
   return (
-    <div>
-      <div className="buttons__education-experience">
+    <div id="experience">
+      <div className="buttons__education-experience" id="education">
         <button
           className={`btn_education ${!showExperience ? 'active' : ''}`}
           onClick={() => toggleExperience()}

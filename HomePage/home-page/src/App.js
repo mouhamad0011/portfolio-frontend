@@ -4,7 +4,7 @@ import About from './About';
 import EduExp from './EduExp';
 import Skills from './Skills';
 import Projects from './Projects';
-
+import Contact from './Contact';
 function App() {
   return (
     <div>
@@ -12,6 +12,7 @@ function App() {
     <EduExp/>
     <Skills/>
     <Projects/>
+    <Contact/>
     </div>
   );
 }

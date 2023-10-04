@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background-color: #555;
+}
+.dropdown-content a:hover{
+    background-color: #333;
+}
+
+.dropdown-content {
+    display: block;
+    padding-left: 25px;
+}
+
+
+.active {
+    background-color: #555;
+}
+
+
+.Content {
+    margin-left: 250px; 
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.Education{
+    display: block;
+}
+#education-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#education-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#education-list li:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+
+#add-education-form {
+    margin-top: 20px;
+}
+
+#add-education-form input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+#add-education-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-education-form button:hover {
+    background-color: #555;
+}
+
+
+#experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#experience-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#experience-list li:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+
+#add-experience-form {
+    margin-top: 20px;
+}
+
+#add-experience-form input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 0;
+    border-bottom:2px solid black;
+}
+textarea{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 0;
+    border-bottom:2px solid black;
+}
+#add-experience-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-experience-form button:hover {
+    background-color: #555;
+}
+.Experience{
+    display: block;
+}
+
+
+.Projects {
+    display: block;
+}
+
+.Projects h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#projects-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects-list li:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+
+#add-project-form {
+    margin-top: 20px;
+}
+
+#add-project-form input[type="text"],
+#add-project-form input[type="file"],
+#add-project-form textarea {
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+#add-project-form textarea {
+    resize: vertical; 
+}
+
+#add-project-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-project-form button:hover {
+    background-color: #555;
+}
+
+/* about main div*/
+.About{
+    display: flex;
+    
+    flex-direction: column;
+}
+.About h2{
+    color: #555;
+}
+.imgcontainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: -12px -12px 2px 1px #9e9d9d;
+}
+.imgcontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 190px;
+    height: 220px;
+}
+
+/* Style for the image */
+.imgcontainer img {
+    width: 190px;
+    height: 220px;
+}
+
+
+.imgcontainer .fa-plus {
+    position: absolute;
+            bottom: 10px; 
+            right: 10px; 
+            font-size: 24px;
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 50%; 
+            cursor: pointer;
+}
+.description{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #9e9d9d;
+}
+.description p{
+    padding: 30px;
+}
+.Skills{
+    background-image: linear-gradient(-45deg,#22283177,#222831);
+    display: block;
+} 
+ h1{
+    color:white ;
+    justify-content: center;
+    text-align: center;
+}
+span{
+    color:#68E0CF
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.image-item {
+    text-align: center;
+    margin: 50px;
+}
+
+.image-item img {
+    width:60px;
+    height: 60px; 
+    background-color: white;
+    border-radius: 100px;
+    border-width: 500px;
+    
+}
+
+.image-item p {
+    margin-top: 5px;
+    font-size: 18px;
+    color:white;
+}
+
+
+
+
+
+/* this is for popup*/
+.popup {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#add-skill-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#image-upload,
+#skill-name,
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

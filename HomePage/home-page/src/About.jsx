@@ -1,4 +1,4 @@
-import './about.css';
+import './App2.css';
 import React, { useEffect, useRef, useState } from 'react';
 
 const About = ({ image, description }) => {
@@ -39,8 +39,6 @@ const About = ({ image, description }) => {
                 About
               </a>
             </li>
-            
-      
         <li>
           <a href="#education" className="navelements">
             Education

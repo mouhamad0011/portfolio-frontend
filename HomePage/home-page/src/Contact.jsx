@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import linkedin from "./images/linkedin-svgrepo-com.svg";
-import github from "./images/github-142-svgrepo-com_1.svg";
-import gmail from "./images/mail-open-alt-1-svgrepo-com_1.svg";
+import linkedin from "./linkedin-svgrepo-com.svg";
+import github from "./github-142-svgrepo-com_1.svg";
+import gmail from "./mail-open-alt-1-svgrepo-com_1.svg";
+import './App2.css';
 const Contact = () => {
     const form = useRef();
   
@@ -20,7 +21,7 @@ const Contact = () => {
   return (<div className="contactmain" id="contact">
   <h3
     className="title"
-    style={{ fontSize: 35, color: "aliceblue", marginLeft: "35%" }}
+    style={{ fontSize: 35, color: "aliceblue" }}
   >
     Got a Project in <span style={{ color: "#68E0CF", textAlign:"center" }}>mind?</span>
   </h3>
