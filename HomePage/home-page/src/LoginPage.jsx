@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -7,7 +9,7 @@ const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  
+  const navigate = useNavigate();
 
 
   const handleLoginClick = async () => {
@@ -17,7 +19,7 @@ const LoginPage = () => {
     }
 
     try {
-        const response = await fetch(`http://localhost:5000/admin/get?username=${username}&password=${password}`, {
+        const response = await fetch(`http://localhost:5000/admin/get/${username}/${password}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -27,7 +29,7 @@ const LoginPage = () => {
         if (response.ok) {
             setError("")
           console.log('success')
-          
+          navigate ('/Dashboard');
 
          
         } else {
