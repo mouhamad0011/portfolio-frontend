@@ -5,23 +5,23 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-#education{
-  margin-bottom: 5%;
-  
+
+#experience{
+  background: linear-gradient(135deg, #222831 51%, #4a5668 100%);
+  padding-top: 5%;
 }
 html{
   scroll-behavior: smooth;
 }
 .Skills{
-  background: linear-gradient(-45deg, #222831 , #222831a9);
-  margin-top: 10%;
-  margin-bottom: 10%;
+  background: linear-gradient(-45deg, #222831 51%, #222831ad 100%);
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .buttons__education-experience{
   display: flex;
   gap: 80px;
   justify-content: center;
-  padding: 20px;
 }
 .active{
   color: whitesmoke;
@@ -36,6 +36,7 @@ html{
   cursor: pointer;
   border: 1px solid #68E0CF;
   border-radius: 40PX;
+  font-size: large;
 }
 
 .btn_experience {
@@ -46,6 +47,7 @@ html{
   cursor: pointer;
   border: 1px solid #68E0CF;
   border-radius: 40px;
+  font-size: large;
 }
 
 .wrapper{
@@ -230,12 +232,15 @@ html{
   }
   .row section .details .title_education{
     text-align: start;
+    width: auto;
   }
   .date_education {
     text-align: start;
+    width: auto;
   }
   .place_education{
     text-align: start;
+    width: auto;
   }
 }
 @media(max-width: 440px){
@@ -300,35 +305,38 @@ html{
 
 
 
+/* CSS for screens with a maximum width of 768px or less */
 @media (max-width: 768px) {
   .contaa {
-      padding: 20px;
+    padding: 10px; /* Decreased padding for smaller screens */
   }
 
   h1 {
-      font-size: 24px;
+    font-size: 20px; /* Smaller font size for h1 */
   }
 
   .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center; 
+    display: flex; /* Change from grid to flex for easier wrapping */
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .image-item {
-      text-align: center;
-      margin: 30px;
+    text-align: center;
+    margin: 10px; /* Reduced margin for smaller screens */
+    flex: 0 0 calc(25% - 20px); /* Distribute items in 4 columns with margin space */
   }
 
   .image-item img {
-      width: 100px; 
-      height: 100px;
-      border-radius: 50%; 
+    width: 100%; /* Use the full width of the container */
+    max-width: 100px; /* Set a max width to prevent oversized images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
   }
 
   .image-item p {
-      font-size: 14px; 
-      margin-top: 10px; 
+    font-size: 12px; /* Smaller font size for paragraphs */
+    margin-top: 5px; /* Reduced margin for smaller screens */
   }
 }
 
