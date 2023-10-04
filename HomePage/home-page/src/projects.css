@@ -1,0 +1,281 @@
+
+body{
+    background: linear-gradient(70deg, #222831 51%, #4a5668 100%);
+
+}
+.containerproject {
+    height: fit-content;
+}
+
+.project1 {
+
+
+    border: 2px solid aqua;
+    /* Change the border color to aqua */
+    width: 1000px;
+    height: 200px;
+    border-radius: 80px 80px;
+    margin-left: 9%;
+    padding: 10px;
+    /* Add padding to create space inside the border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeimg {
+    width: 220px;
+    height: 170px;
+    border-radius: 50px 50px;
+
+}
+
+.project {
+    flex: 1;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+
+.project2 {
+
+    width: 1000px;
+    height: 200px;
+    border-radius: 80px 80px;
+    padding: 20px;
+    /* Add padding to create space inside the border */
+    margin: 10px;
+    /* Add margin for spacing between divs */
+    background-color: #ffffff80;
+    margin-left: 8%;
+    padding: 20px;
+    /* Add padding to create space inside the border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project3 {
+    width: 1000px;
+    height: 200px;
+    border-radius: 80px 80px;
+    padding: 20px;
+    /* Add padding to create space inside the border */
+    margin: 10px;
+    /* Add margin for spacing between divs */
+    background-color: #D9D9D9;
+    margin-left: 8%;
+    padding: 20px;
+    /* Add padding to create space inside the border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    flex:1;
+}
+.project-container{
+    flex: 1;
+}
+
+.project,.project-container{
+    margin-bottom: 3%;
+}
+.project1,
+.project2,
+.project3 {
+    margin-bottom: 1%;
+
+}
+.project2,.project3{
+    margin-bottom: 0;
+}
+
+.projectimg {
+    margin-right: 30px;
+    /* Adjust the margin as needed for spacing */
+    margin-left: 15px;
+}
+@media (max-width: 700px) {
+    .containerproject {
+        height: auto;
+    }
+
+    .project1, .project2, .project3 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sizeimg {
+        margin: 0; /* Remove margins to center the image */
+    }
+
+    .sizeimg {
+        width: 200px;
+        height: 120px;
+        border-radius: 20px 20px;
+        margin-bottom: 20%;
+        margin-top:20% ;
+    
+    }
+    .project1,.project3{
+
+
+        border: 2px solid aqua;
+        /* Change the border color to aqua */
+        width: 300px;
+        height: fit-content;
+        border-radius: 80px 80px;
+        /* Add padding to create space inside the border */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+        .containerproject {
+            height: auto;
+            background: linear-gradient(70deg, #222831 51%, #4a5668 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+    
+    .project2 {
+
+        width: 300px;
+        height: fit-content;
+        border-radius: 80px 80px;
+        
+        background-color: #ffffff80;
+        padding: 20px;
+        /* Add padding to create space inside the border */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .project3{
+        width: 300px;
+        height: fit-content;
+        border-radius: 80px 80px;
+        
+        padding: 20px;
+        /* Add padding to create space inside the border */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
+    
+
+@media (min-width:500px)and(max-width: 750px) {
+    .containerproject {
+            height: auto;
+           /* background: linear-gradient(70deg, #222831 51%, #4a5668 100%);*/
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .project1 {
+
+
+            border: 2px solid aqua;
+            /* Change the border color to aqua */
+            width: 700px;
+            height: 200px;
+            border-radius: 80px 80px;
+            margin-left: 2%;
+            padding: 10px;
+            /* Add padding to create space inside the border */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sizeimg {
+            width: 220px;
+            height: 170px;
+            border-radius: 50px 50px;
+        
+        }
+        
+        .project {
+            flex: 1;
+            color: white;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        
+        }
+        
+        
+        .project2 {
+        
+            width: 1000px;
+            height: 200px;
+            border-radius: 80px 80px;
+            padding: 20px;
+            /* Add padding to create space inside the border */
+            margin: 10px;
+            /* Add margin for spacing between divs */
+            background-color: #ffffff80;
+            margin-left: 8%;
+            padding: 20px;
+            /* Add padding to create space inside the border */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        .project3 {
+            width: 1000px;
+            height: 200px;
+            border-radius: 80px 80px;
+            padding: 20px;
+            /* Add padding to create space inside the border */
+            margin: 10px;
+            /* Add margin for spacing between divs */
+            background-color: #D9D9D9;
+            margin-left: 8%;
+            padding: 20px;
+            /* Add padding to create space inside the border */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        
+        .project1,
+        .project2,
+        .project3 {
+            margin-bottom: 2%;
+        
+        }
+        
+        .projectimg {
+            margin-right: 30px;
+            /* Adjust the margin as needed for spacing */
+            margin-left: 15px;
+        }
+    
+
+    }
