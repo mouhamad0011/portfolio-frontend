@@ -52,7 +52,6 @@ a:hover {
   overflow: hidden; 
   position:relative;
   top: 50%;
-
 }
 
 .downloadcv {
@@ -287,14 +286,11 @@ flex: 1;    }
 
 /*projects css*/
 
-body{
-  background: linear-gradient(70deg, #222831 51%, #4a5668 100%);
-
-}
 .containerproject {
   height: fit-content;
   position:relative;
   top: 50%;
+  background: linear-gradient(70deg, #222831 51%, #4a5668 100%);
 }
 
 .project1 {

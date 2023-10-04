@@ -1,6 +1,6 @@
 import React, { useState, useEffect ,useRef} from 'react';
 import axios from 'axios';
-
+import styles from "./style.module.css";
 
 function Projects() {
   const [projectName, setProjectName] = useState('');
@@ -79,9 +79,9 @@ function Projects() {
   };
 
   return (
-    <div className="Projects">
+    <div className={styles.Projects}>
       <h1>Projects</h1>
-      <ul id="projects-list">
+      <ul id={styles["projects-list"]}>
         {projects && projects.map((project) => (
           <li key={project._id}>
             <div>
@@ -103,35 +103,35 @@ function Projects() {
       </ul>
   
       <h2>Add New Project</h2>
-      <form id="add-project-form" onSubmit={handleAddProject}>
+      <form id={styles["add-project-form"]} onSubmit={handleAddProject}>
         <input
           type="text"
           placeholder="Project Name"
-          id="project-name"
+          id={styles["project-name"]}
           value={projectName}
           onChange={(e) => setProjectName(e.target.value)}
-        />
+        /><br/>
         <input
           type="file"
           name="image"
-          id="project-image"
+          id={styles["project-image"]}
           onChange={handleFileChange}
           ref={fileInput}
-        />
+        /><br/>
         <textarea
           name="description"
-          id="project-description"
+          id={styles["project-description"]}
           placeholder="Project Description"
           value={projectDescription}
           onChange={(e) => setProjectDescription(e.target.value)}
-        ></textarea>
+        ></textarea><br/>
         <input
           type="text"
           placeholder="Project Link"
-          id="project-link"
+          id={styles["project-link"]}
           value={projectLink}
           onChange={(e) => setProjectLink(e.target.value)}
-        />
+        /><br/>
         <button
           type="submit"
           style={{

@@ -3,6 +3,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import plus from './plus.jpg';
+import styles from './style.module.css';
 function Skills() {
   const [skills, setSkills] = useState([]);
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -87,13 +88,13 @@ function Skills() {
   };
   
   return (
-    <div className="Skills">
-      <h1 className="atitle">
+    <div className={styles.Skills}>
+      <h1 className={styles.title}>
         My <span>Tech Stack</span>
       </h1>
-      <div className="image-gallery">
+      <div className={styles["image-gallery"]}>
         {skills && skills.map((skill) => (
-          <div className="image-item" key={skill._id}>
+          <div className={styles["image-item"]} key={skill._id}>
             <img src={skill.image} alt={`Image ${skill.name}`} />
             <p>{skill.name}</p>
             <FontAwesomeIcon
@@ -104,29 +105,29 @@ function Skills() {
             />
           </div>
         ))}
-        <div className="image-item">
+        <div className={styles["image-item"]}>
           <img src={plus} alt="" onClick={handlePopupOpen} />
           <p>Add more</p>
         </div>
       </div>
       {isPopupVisible && (
-        <div className="popup">
-          <div className="popup-content">
-            <span className="close-popup" onClick={handlePopupClose}>
+        <div className={styles.popup}>
+          <div className={styles["popup-content"]}>
+            <span className={styles["close-popup"]} onClick={handlePopupClose}>
               &times;
             </span>
             <h2>Add a New Skill</h2>
             <form onSubmit={handleAddSkill}>
               <input
                 type="file"
-                id="image-upload"
+                id={styles["image-upload"]}
                 accept="image/*"
                 onChange={handleSkillImageChange}
                 required
               />
               <input
                 type="text"
-                id="skill-name"
+                id={styles["skill-name"]}
                 placeholder="Skill Name"
                 value={newSkillName}
                 onChange={(e) => setNewSkillName(e.target.value)}

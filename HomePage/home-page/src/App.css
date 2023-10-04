@@ -7,11 +7,12 @@
 }
 #education{
   margin-bottom: 5%;
+  background: linear-gradient(-45deg, #222831 , #222831a9);
 }
 html{
   scroll-behavior: smooth;
 }
-body{
+.Skills{
   background: linear-gradient(-45deg, #222831 , #222831a9);
 }
 .buttons__education-experience{

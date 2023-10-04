@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-
+import styles from'./style.module.css';
 function Experience() {
   const [experienceItems, setExperienceItems] = useState([]);
   const [newPosition, setNewPosition] = useState('');
@@ -81,9 +81,9 @@ function Experience() {
   };
 
   return (
-    <div className="Experience">
-      <h1>Experience</h1>
-      <ul id="experience-list">
+    <div className={styles.Experience}>
+      <h1>Experiences</h1>
+      <ul id={styles["experience-list"]}>
         {experienceItems.map((item) => (
           <li key={item._id}> 
             {item.position}, {item.date}, {item.place}
@@ -96,25 +96,25 @@ function Experience() {
         ))}
       </ul>
       <h2>Add New Experience</h2>
-      <form id="add-experience-form" onSubmit={handleAddExperience}>
+      <form id={styles["add-experience-form"]} onSubmit={handleAddExperience}>
         <input
           type="text"
           placeholder="Position"
           value={newPosition}
           onChange={(e) => setNewPosition(e.target.value)}
-        />
+        /><br/>
         <textarea
           name="description"
           placeholder="Description"
           value={newDescription}
           onChange={(e) => setNewDescription(e.target.value)}
-        ></textarea>
+        ></textarea><br/>
         <input
           type="text"
           placeholder="Date"
           value={newDate}
           onChange={(e) => setNewDate(e.target.value)}
-        />
+        /><br/>
         <input
           type="text"
           placeholder="Place"

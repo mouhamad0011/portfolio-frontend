@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import About from './About';
-import EduExp from './EduExp';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
+import About from './About.jsx';
+import EduExp from './EduExp.jsx';
+import Skills from './Skills.jsx';
+import Projects from './Projects.jsx';
+import Contact from './Contact.jsx';
 function App() {
   return (
     <div>

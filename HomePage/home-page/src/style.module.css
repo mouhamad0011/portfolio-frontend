@@ -260,8 +260,8 @@ textarea{
             border-radius: 50%; 
             cursor: pointer;
 }
-.description{
-    width: 50%;
+.description {
+    width: fit-content;
     height: 200px;
     display: flex;
     align-items: center;
@@ -269,15 +269,17 @@ textarea{
     color: black;
     background-color: #9e9d9d;
 }
-.description p{
+
+.description-p {
     padding: 30px;
 }
+
 .Skills{
     background-image: linear-gradient(-45deg,#22283177,#222831);
     display: block;
 } 
  h1{
-    color:white ;
+    color:black ;
     justify-content: center;
     text-align: center;
 }

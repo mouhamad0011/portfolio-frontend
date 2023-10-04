@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faSquarePen } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
-
+import styles from './style.module.css';
 function About() {
   const [isEditing, setIsEditing] = useState(false);
   const [aboutDescription, setAboutDescription] = useState('');
@@ -120,52 +120,53 @@ function About() {
   };
 
   return (
-    <div className="About">
+    <div className={styles.About}>
       <h2>About</h2>
-      <div className="imgcontainer">
+      <div className={styles.imgcontainer}>
         <img
           src={profilePhoto}
-          className="picture"
-          id="profile-photo"
+          className={styles.picture}
+          id={styles["profile-photo"]}
           alt="Profile"
         />
         <FontAwesomeIcon
           icon={faPlus}
-          className="fa-solid fa-plus"
-          id="upload-icon"
+          className={styles["fa-plus"]}
+          id={styles["upload-icon"]}
           onClick={() => fileInput.current.click()}
         />
-        <form action=''>
+        <button onClick={handleUpload}>Upload Image</button>
+        <form >
+        
         <input
           type="file"
-          id="file-upload"
+          id={styles["file-upload"]}
           style={{ display: 'none' }}
           accept="image/*"
           onChange={handleFileChange}
           ref={fileInput}
         />
-        <button onClick={handleUpload}>Upload Image</button>
+        
         </form>
       </div>
-      <div className="description">
+      <div className={styles.description}>
         {isEditing ? (
           <div>
             <textarea
-              id="about-description"
-              value={aboutDescription}
+              id={styles["about-description"]}
               onChange={handleDescriptionChange}
               onKeyDown={handleKeyDown}
             />
             <button onClick={saveDescription}>Save</button>
           </div>
         ) : (
-          <div>
-            <p id="about-description">
+          <div className={styles.description}>
+            <p className={styles["description-p"]}>
               {aboutData?.description || aboutDescription}
               <FontAwesomeIcon
                 icon={faSquarePen}
-                className="fa-sharp fa-solid fa-square-pen"
-                id="pencil"
+                className={styles["fa-square-pen"]}
+                id={styles["pencil"]}
                 onClick={toggleEdit}
               />
             </p>

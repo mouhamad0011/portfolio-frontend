@@ -100,13 +100,13 @@ function Education() {
         placeholder="Degree"
         value={newDegree}
         onChange={(e) => setNewDegree(e.target.value)}
-      />
+      /><br/>
       <input
         type="text"
         placeholder="Date"
         value={newDate}
         onChange={(e) => setNewDate(e.target.value)}
-      />
+      /><br/>
       <input
         type="text"
         placeholder="Place"
