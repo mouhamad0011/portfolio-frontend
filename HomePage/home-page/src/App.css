@@ -9,7 +9,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background:  linear-gradient(-45deg, #222831 , #22283177);
+  background: linear-gradient(-45deg, #222831 , #222831a9);
 }
 .buttons__education-experience{
   display: flex;
@@ -285,9 +285,7 @@ body{
   border: 1px solid white;
   
 }
-.image-item:hover{
-  transform: scale(1.5);
-}
+
 .image-item p {
   margin-top: 5px;
   font-size: 18px;

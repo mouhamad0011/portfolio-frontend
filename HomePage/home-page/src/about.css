@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 /* navbar css*/
 .navbar {
     background-color: #41454c98;
@@ -40,7 +41,7 @@ a:hover {
 .aboutmain {
     width: auto;
     height: auto;
-    background:  linear-gradient(90deg, #222831 51%, #222831 100%); 
+    background:  linear-gradient(-45deg, #222831 , #222831a9);
     display: flex;
     justify-content: space-between;
     overflow: hidden; /* Add this to hide potential overflow */
@@ -59,6 +60,7 @@ font-size: 24px;
 justify-content: center;
 margin-top: 1%;
 margin-left: 12%;
+margin-bottom: 25px;
 }
 
 .imgcontainer{
@@ -86,8 +88,9 @@ margin-left: 12%;
 
 }
 .aboutdiv2 .background {
-    text-align: center;
+    text-align: justify;
     margin: auto;
+    padding: 10px;
 }
 .textdesign,.background{
     margin-top: 10%;

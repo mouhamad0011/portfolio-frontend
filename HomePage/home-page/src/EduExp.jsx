@@ -7,8 +7,8 @@ const EduExp = ({ data, section }) => {
   const [experienceData, setExperienceData] = useState([]);
   const [showExperience, setShowExperience] = useState(false);
 
-  const educationIcon = process.env.PUBLIC_URL + './education-svgrepo-com.svg';
-  const experienceIcon = process.env.PUBLIC_URL + './work-case-svgrepo-com.svg';
+  const educationIcon = process.env.PUBLIC_URL + './asset/education-svgrepo-com.svg';
+  const experienceIcon = process.env.PUBLIC_URL + './asset/work-case-svgrepo-com.svg';
 
   const toggleExperience = () => {
     setShowExperience(!showExperience);
