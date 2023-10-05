@@ -74,7 +74,7 @@ const About = ({ image, description }) => {
         <div key={index}>
           <div className="aboutmain" id="about">
             <div className="aboutdiv1">
-              <h3 style={{ fontSize: 35, color: 'aliceblue' }}>
+              <h3 className="aboutme-text" style={{ fontSize: 35, color: 'aliceblue' }}>
                 About <span style={{ color: '#68E0CF' }}>me</span>
               </h3>
               <div className="imgcontainer">

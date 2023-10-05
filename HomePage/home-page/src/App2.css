@@ -98,7 +98,8 @@ a:hover {
 
 .imgcontainer{
   margin-bottom: 15px;
-  box-shadow: -12px -12px 2px 1px rgba(150, 150, 151, 0.2);
+  box-shadow: -12px -12px 2px 1px rgb(151 150 150 / 44%);
+  border-radius: 20px;
 
   
 }
@@ -124,26 +125,27 @@ a:hover {
 }
 .aboutdiv2 .background {
   text-align: center;
-  margin: auto;
 }
 .textdesign,.background{
   margin-top: 5%;
 }
 .textdesign {
   color: #ffffff;
-  font-size: 21px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-  margin-left:6%;
-  margin-right: 6%;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   text-align: justify;
+  padding: 10px 20px;
 }
 
 .background {
   background-color: #5f6061fa;
   text-align: left;
   width: 80%;
-  height: 300px;
-  border-radius: 40px;
+  height: 270px;
+  border-radius: 30px;
 }
 
 .imgcontainer {
@@ -155,6 +157,10 @@ a:hover {
 .picture {
   width: 190px;
   height: 220px;
+  border-radius: 20px;
+}
+.aboutme-text{
+  margin-bottom: 5%;
 }
 .logo2{
   width: 30px;
