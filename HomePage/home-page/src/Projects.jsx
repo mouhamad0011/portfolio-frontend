@@ -12,7 +12,7 @@ const Projects = ({ name, image, description, link }) => {
   }, []);
 
   const fetchProjectsData = () => {
-    fetch('http://localhost:5000/projects/getAll') 
+    fetch('https://jihan-shamas2397.onrender.com/projects/getAll') 
       .then((response) => response.json())
       .then((data) => setProjectsData(data.data))
       .catch((error) => console.log(error));

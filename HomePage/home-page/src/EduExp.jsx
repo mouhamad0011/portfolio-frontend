@@ -20,14 +20,14 @@ const EduExp = ({ data, section }) => {
   }, []);
 
   const fetchData = () => {
-    fetch('http://localhost:5000/education/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/education/getAll')
       .then((response) => response.json())
       .then((data) => setEducationData(data.data))
       .catch((error) => console.log(error));
   };
 
   const fetchExperienceData = () => {
-    fetch('http://localhost:5000/experience/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/experience/getAll')
       .then((response) => response.json())
       .then((data) => setExperienceData(data.data))
       .catch((error) => console.log(error));

@@ -12,7 +12,7 @@ function Projects() {
   const fileInput = useRef(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/projects/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/projects/getAll')
       .then((response) => {
         if (!response.ok) {
           throw new Error('error');
@@ -59,7 +59,7 @@ function Projects() {
         link: newLink,
       };
 
-      await fetch('http://localhost:5000/projects/add', {
+      await fetch('https://jihan-shamas2397.onrender.com/projects/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ function Projects() {
         image: editedImageURL
       };
 
-      await fetch(`http://localhost:5000/projects/update/${editingProjectId}`, {
+      await fetch(`https://jihan-shamas2397.onrender.com/projects/update/${editingProjectId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -162,7 +162,7 @@ function Projects() {
 
   const handleDeleteProject = async (id) => {
     try {
-      await fetch(`http://localhost:5000/projects/delete/${id}`, {
+      await fetch(`https://jihan-shamas2397.onrender.com/projects/delete/${id}`, {
         method: 'DELETE',
       })
         .then((response) => {

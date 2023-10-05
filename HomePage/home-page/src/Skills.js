@@ -12,14 +12,14 @@ function Skills() {
   const [infos, setInfos] = useState("");
 
   useEffect(() => {
-    fetch('http://localhost:5000/skills/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/skills/getAll')
       .then((response) => response.json())
       .then((data) => setSkills(data.data))
       .catch((error) => console.error('Error fetching skills:', error));
   }, [infos]);
 
   const handleDeleteSkill = (skillId) => {
-    fetch(`http://localhost:5000/skills/delete/${skillId}`, {
+    fetch(`https://jihan-shamas2397.onrender.com/skills/delete/${skillId}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())
@@ -60,7 +60,7 @@ function Skills() {
       setNewSkillImage(imageUrl);
       console.log('Image uploaded successfully:', imageUrl);
       try {
-        const response2 = await fetch(`http://localhost:5000/skills/add`, {
+        const response2 = await fetch(`https://jihan-shamas2397.onrender.com/skills/add`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ const LoginPage = () => {
     }
 
     try {
-        const response = await fetch(`http://localhost:5000/admin/get/${username}/${password}`, {
+        const response = await fetch(`https://jihan-shamas2397.onrender.com/admin/get/${username}/${password}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

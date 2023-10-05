@@ -9,12 +9,12 @@ function Experience() {
   const [newDescription, setNewDescription] = useState('');
   const [newDate, setNewDate] = useState('');
   const [newPlace, setNewPlace] = useState('');
-  const [editingItemId, setEditingItemId] = useState(null); // State for the item being edited
+  const [editingItemId, setEditingItemId] = useState(null); 
   const [infos,setInfos]=useState(true);
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/experience/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/experience/getAll')
       .then((response) => {
         if (!response.ok) {
           throw new Error('error');
@@ -38,7 +38,7 @@ function Experience() {
         place: newPlace,
         description: newDescription,
       };
-      await fetch('http://localhost:5000/experience/add', {
+      await fetch('https://jihan-shamas2397.onrender.com/experience/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ function Experience() {
         place: newPlace,
         description: newDescription,
       };
-      await fetch(`http://localhost:5000/experience/update/${editingItemId}`, {
+      await fetch(`https://jihan-shamas2397.onrender.com/experience/update/${editingItemId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ function Experience() {
   };
   const handleDeleteExperience = async (id) => {
     try {
-      await fetch(`http://localhost:5000/experience/delete/${id}`, {
+      await fetch(`https://jihan-shamas2397.onrender.com/experience/delete/${id}`, {
         method: 'DELETE',
       })
         .then((response) => {

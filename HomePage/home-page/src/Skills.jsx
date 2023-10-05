@@ -7,7 +7,7 @@ function Skills() {
   const [infos, setInfos] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/skills/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/skills/getAll')
       .then((response) => response.json())
       .then((data) => setSkills(data.data))
       .catch((error) => console.error('Error fetching skills:', error));

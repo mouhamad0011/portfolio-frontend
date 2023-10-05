@@ -10,7 +10,7 @@ function About() {
   const [aboutData, setAboutData] = useState({});
   const [infos,setInfos]=useState(true);
   useEffect(() => {
-    fetch('http://localhost:5000/about/get')
+    fetch('https://jihan-shamas2397.onrender.com/about/get')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Error');
@@ -60,7 +60,7 @@ function About() {
       setProfilePhoto(imageUrl);
       console.log('Image uploaded successfully:', imageUrl);
       try {
-        const response2 = await fetch(`http://localhost:5000/about/update/${aboutData._id}`, {
+        const response2 = await fetch(`https://jihan-shamas2397.onrender.com/about/update/${aboutData._id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ function About() {
 
   const saveDescription = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/about/update/${aboutData._id}`, {
+      const response = await fetch(`https://jihan-shamas2397.onrender.com/about/update/${aboutData._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

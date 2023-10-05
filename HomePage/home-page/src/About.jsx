@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   const fetchAboutData = () => {
-    fetch('http://localhost:5000/About/get')
+    fetch('https://jihan-shamas2397.onrender.com/About/get')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

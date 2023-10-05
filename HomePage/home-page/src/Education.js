@@ -8,11 +8,11 @@ function Education() {
   const [newDegree, setNewDegree] = useState('');
   const [newDate, setNewDate] = useState('');
   const [newPlace, setNewPlace] = useState('');
-  const [editingItemId, setEditingItemId] = useState(null); // State for the item being edited
+  const [editingItemId, setEditingItemId] = useState(null); 
   const [infos, setInfos] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/education/getAll')
+    fetch('https://jihan-shamas2397.onrender.com/education/getAll')
       .then((response) => {
         if (!response.ok) {
           throw new Error('error');
@@ -35,7 +35,7 @@ function Education() {
         date: newDate,
         place: newPlace,
       };
-      await fetch('http://localhost:5000/education/add', {
+      await fetch('https://jihan-shamas2397.onrender.com/education/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ function Education() {
         date: newDate,
         place: newPlace,
       };
-      await fetch(`http://localhost:5000/education/update/${editingItemId}`, {
+      await fetch(`https://jihan-shamas2397.onrender.com/update/${editingItemId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ function Education() {
 
   const handleDeleteEducation = async (id) => {
     try {
-      await fetch(`http://localhost:5000/education/delete/${id}`, {
+      await fetch(`https://jihan-shamas2397.onrender.com/education/delete/${id}`, {
         method: 'DELETE',
       })
         .then((response) => {
