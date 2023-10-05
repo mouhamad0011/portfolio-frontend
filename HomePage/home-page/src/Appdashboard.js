@@ -6,7 +6,7 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
 
-function APP() {
+function APP(props) {
   const [visibleAbout, setAboutVisible] = useState(true);
   const [visibleEducation, setEducationVisible] = useState(false);
   const [visibleExperience, setExperienceVisible] = useState(false);
@@ -20,71 +20,78 @@ function APP() {
     setSkillsVisible(section === 'skills');
     setProjectsVisible(section === 'projects');
   };
- console.log(styles);
+
   return (
-    <body>
-      <div className={styles['sidebar']}>
-        <a href="#" className={styles.active}>
-          Dashboard
-        </a>
-        <a href="#" onClick={() => handleSidebarClick('about')}>
-          About
-        </a>
-        {visibleAbout && (
-          <div className={styles['dropdown-content']}>
-            <a href="#">- photo</a>
-            <a href="#">- description</a>
+    <div>
+      {props.isLoggedIn ? (
+        <body>
+          <div className={styles['sidebar']}>
+            <a href="#" className={styles.active}>
+              Dashboard
+            </a>
+            <a href="#" onClick={() => handleSidebarClick('about')}>
+              About
+            </a>
+            {visibleAbout && (
+              <div className={styles['dropdown-content']}>
+                <a href="#">- photo</a>
+                <a href="#">- description</a>
+              </div>
+            )}
+            <a href="#" onClick={() => handleSidebarClick('education')}>
+              Education
+            </a>
+            {visibleEducation && (
+              <div className={styles['dropdown-content']}>
+                <a href="#">- degree</a>
+                <a href="#">- date</a>
+                <a href="#">- place</a>
+              </div>
+            )}
+            <a href="#" onClick={() => handleSidebarClick('experience')}>
+              Experience
+            </a>
+            {visibleExperience && (
+              <div className={styles['dropdown-content']}>
+                <a href="#">- position</a>
+                <a href="#">- description</a>
+                <a href="#">- date</a>
+                <a href="#">- place</a>
+              </div>
+            )}
+            <a href="#" onClick={() => handleSidebarClick('skills')}>
+              Skills
+            </a>
+            {visibleSkills && (
+              <div className={styles['dropdown-content']}>
+                <a href="#">- skill image</a>
+                <a href="#">- skill name</a>
+              </div>
+            )}
+            <a href="#" onClick={() => handleSidebarClick('projects')}>
+              Projects
+            </a>
+            {visibleProjects && (
+              <div className={styles['dropdown-content']}>
+                <a href="#">- photo</a>
+                <a href="#">- description</a>
+              </div>
+            )}
           </div>
-        )}
-        <a href="#" onClick={() => handleSidebarClick('education')}>
-          Education
-        </a>
-        {visibleEducation && (
-          <div className={styles['dropdown-content']}>
-            <a href="#">- degree</a>
-            <a href="#">- date</a>
-            <a href="#">- place</a>
+          <div className={styles.Content}>
+            {visibleAbout && <About />}
+            {visibleEducation && <Education />}
+            {visibleExperience && <Experience />}
+            {visibleSkills && <Skills />}
+            {visibleProjects && <Projects />}
           </div>
-        )}
-        <a href="#" onClick={() => handleSidebarClick('experience')}>
-          Experience
-        </a>
-        {visibleExperience && (
-          <div className={styles['dropdown-content']}>
-            <a href="#">- position</a>
-            <a href="#">- description</a>
-            <a href="#">- date</a>
-            <a href="#">- place</a>
-          </div>
-        )}
-        <a href="#" onClick={() => handleSidebarClick('skills')}>
-          Skills
-        </a>
-        {visibleSkills && (
-          <div className={styles['dropdown-content']}>
-            <a href="#">- skill image</a>
-            <a href="#">- skill name</a>
-          </div>
-        )}
-        <a href="#" onClick={() => handleSidebarClick('projects')}>
-          Projects
-        </a>
-        {visibleProjects && (
-          <div className={styles['dropdown-content']}>
-            <a href="#">- photo</a>
-            <a href="#">- description</a>
-          </div>
-        )}
-      </div>
-      <div className={styles.Content}>
-        {visibleAbout && <About />}
-        {visibleEducation && <Education />}
-        {visibleExperience && <Experience />}
-        {visibleSkills && <Skills />}
-        {visibleProjects && <Projects />}
-      </div>
-    </body>
+        </body>
+      ) : (
+        <h1>You are not the admin</h1>
+      )}
+    </div>
   );
+  
 }
 
 export default APP;

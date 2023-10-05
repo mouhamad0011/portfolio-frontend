@@ -10,7 +10,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
-
+  const [isLoggedIn,setIsLoggedIn]=useState(false);
 
   const handleLoginClick = async () => {
     if (!username || !password) {
@@ -27,8 +27,9 @@ const LoginPage = () => {
         });
     
         if (response.ok) {
-            setError("")
+          setError("")
           console.log('success')
+          setIsLoggedIn(true);
           navigate ('/Dashboard');
 
          
