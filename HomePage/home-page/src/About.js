@@ -156,6 +156,7 @@ function About() {
               id={styles["about-description"]}
               onChange={handleDescriptionChange}
               onKeyDown={handleKeyDown}
+              style={{marginLeft: "30px"}}
             />
             <button onClick={saveDescription}>Save</button>
           </div>
