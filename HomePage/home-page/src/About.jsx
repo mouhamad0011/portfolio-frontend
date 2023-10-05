@@ -80,9 +80,10 @@ const About = ({ image, description }) => {
               <div className="imgcontainer">
                 <img src={item.image} className="picture" alt="Profile" />
               </div>
-              <a href="/path/to/your/cv.pdf" download="JihanShamasCV.pdf">
-                <button className="downloadcv">Download CV</button>
+              <a href="https://i.ibb.co/Gv5yJrq/Jihan-Shamas-Resume.jpg" download="Jihan-Shamas-Resume.jpg">
+                  <button className="downloadcv">Download CV</button>
               </a>
+
             </div>
             <div className="aboutdiv2">
               <div className="background">
