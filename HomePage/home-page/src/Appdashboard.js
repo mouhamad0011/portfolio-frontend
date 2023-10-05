@@ -6,7 +6,7 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
 
-function APP(props) {
+function APP() {
   const [visibleAbout, setAboutVisible] = useState(true);
   const [visibleEducation, setEducationVisible] = useState(false);
   const [visibleExperience, setExperienceVisible] = useState(false);
@@ -23,8 +23,6 @@ function APP(props) {
 
   return (
     <div>
-      {props.isLoggedIn ? (
-        <body>
           <div className={styles['sidebar']}>
             <a href="#" className={styles.active}>
               Dashboard
@@ -85,10 +83,6 @@ function APP(props) {
             {visibleSkills && <Skills />}
             {visibleProjects && <Projects />}
           </div>
-        </body>
-      ) : (
-        <h1>You are not the admin</h1>
-      )}
     </div>
   );
   
