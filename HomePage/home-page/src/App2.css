@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -57,28 +58,16 @@ a:hover {
 }
 
 .downloadcv {
-
   margin-left: 12%;
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #68E0CF;
-  width: 150px;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-
+  color: white;
+  background: #68E0CF;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 800;
+  width: 100%;
+  font-size: 17px;
   border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  cursor: pointer;
 }
 
 .downloadcv:hover,
@@ -137,13 +126,13 @@ a:hover {
   justify-content: center;
   align-items: center; 
   text-align: justify;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 .background {
   background-color: #5f6061fa;
   text-align: left;
-  width: 80%;
+  width: 75%;
   height: 270px;
   border-radius: 30px;
 }
@@ -249,9 +238,6 @@ flex: 1;    }
 
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  .navbar {
-    padding: 5px; 
-  }
 
   .nav-list li {
     padding: 0 8px; 
@@ -274,13 +260,8 @@ flex: 1;    }
     height: 165px; 
   }
 
-  .textdesign {
-    font-size: 16px; 
-    margin-left: 10%; 
-  }
-
   .background {
-    height: 250px; 
+    border-radius: 20px; 
   }
 
 }
@@ -606,8 +587,8 @@ margin-bottom: 3%;
     border: 2px solid #68E0CF;
     padding: 20px;
     margin: 10px;
-    width: 1000px;
-    height: 500px;
+    width: 80%;
+    height: 600px;
     border-radius: 80px 80px;
 }
 
@@ -635,15 +616,7 @@ margin-bottom: 3%;
 
 }
 
-.bgcontact2 {
-    background-color: #d9d9d923;
-    width: 350px;
-    height: 370px;
-    border-radius: 80px 80px;
-    margin-left: 10%;
-    margin-top: 4%;
 
-}
 
 
 /*contact info*/
@@ -658,8 +631,15 @@ margin-bottom: 3%;
     top: 50%;
 }
 .bgcontact2 {
-    padding: 20px;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #d9d9d923;
+        width: 350px;
+        height: 425px;
+        border-radius: 30px;
+        margin-top: 10%;
+       
 }
 
 .n {
@@ -708,28 +688,16 @@ a:hover {
 }
 .downloadcv1 {
 
-  justify-content: center;
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #68E0CF;
-  width: 200px;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-
+  color: white;
+  background: #68E0CF;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 800;
+  width: 100%;
+  font-size: 17px;
   border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
+
 
 .downloadcv1:hover,
 .downloadcv1:focus-visible{

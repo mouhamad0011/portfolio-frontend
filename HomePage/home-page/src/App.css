@@ -32,22 +32,22 @@ html{
 .btn_education {
   position: relative;
   overflow: hidden;
-  height: 3rem;
+  height: 50px;
   padding: 0 35px;
   cursor: pointer;
   border: 1px solid #68E0CF;
-  border-radius: 40PX;
+  border-radius: 20PX;
   font-size: large;
 }
 
 .btn_experience {
   position: relative;
   overflow: hidden;
-  height: 3rem;
+  height: 50px;
   padding: 0 35px;
   cursor: pointer;
   border: 1px solid #68E0CF;
-  border-radius: 40px;
+  border-radius: 20px;
   font-size: large;
 }
 
@@ -140,8 +140,8 @@ html{
   justify-content: space-between;
 }
 .row section .details .title_education{
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 600;
   color: #68E0CF;
   text-align: center;
 }
@@ -164,10 +164,12 @@ html{
 .date_education{
   color: rgb(182, 180, 180);
   text-align: center;
+  font-size: 22px;
 }
 .place_education {
   color:rgb(182, 180, 180);
   text-align: center;
+  font-size: 22px;
 }
 .master-date-place_education{
   color: rgb(182, 180, 180);
@@ -266,6 +268,7 @@ html{
   color:white ;
   justify-content: center;
   text-align: center;
+  font-size: 35px;
 }
 .span{
   color:#68E0CF
@@ -275,7 +278,7 @@ html{
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: repeat(7, 1fr); 
+  grid-template-columns: repeat(5, 1fr); 
   grid-gap: 10px; 
   
 }
@@ -306,33 +309,33 @@ html{
 
 
 
-/* CSS for screens with a maximum width of 768px or less */
+
 @media (max-width: 768px) {
   .contaa {
-    padding: 10px; /* Decreased padding for smaller screens */
+    padding: 10px; 
   }
 
-  h1 {
-    font-size: 20px; /* Smaller font size for h1 */
+  .atitle {
+    font-size: 30px; 
   }
 
   .image-gallery {
-    display: flex; /* Change from grid to flex for easier wrapping */
+    display: flex; 
     flex-wrap: wrap;
     align-items: center;
   }
 
   .image-item {
     text-align: center;
-    margin: 10px; /* Reduced margin for smaller screens */
-    flex: 0 0 calc(25% - 20px); /* Distribute items in 4 columns with margin space */
+    margin: 10px;
+    flex: 0 0 calc(25% - 20px); 
   }
 
   .image-item img {
-    width: 100%; /* Use the full width of the container */
-    max-width: 100px; /* Set a max width to prevent oversized images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
+    width: 100%; 
+    max-width: 100px; 
+    height: auto; 
+    border-radius: 20px;
   }
 
   .image-item p {

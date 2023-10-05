@@ -64,7 +64,7 @@ const EduExp = ({ data, section }) => {
             experienceData.map((item, index) => (
               <div className={`row ${index % 2 === 0 ? 'row-1' : 'row-2'}`} key={index}>
                 <section>
-                <i class="icon"></i>
+                <i className="icon"></i>
                   <div className="details">
                     <span className="title_education">{item.degree || item.position}</span>
                     <span className="date_education">{item.date}</span>
@@ -78,7 +78,7 @@ const EduExp = ({ data, section }) => {
             educationData.map((item, index) => (
               <div className={`row ${index % 2 === 0 ? 'row-1' : 'row-2'}`} key={index}>
                 <section>
-                     <i class="icon"></i>
+                     <i className="icon"></i>
                   <div className="details">
                     <span className="title_education">{item.degree || item.position}</span>
                     <span className="date_education">{item.date}</span>
