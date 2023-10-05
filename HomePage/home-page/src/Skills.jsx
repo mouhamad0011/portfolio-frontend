@@ -15,7 +15,7 @@ function Skills() {
 
  
   return (
-    <div className="Skills">
+    <div className="Skills" id="Skills">
       <h1 className="atitle">
         My <span className='.span'>Tech Stack</span>
       </h1>
