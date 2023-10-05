@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import linkedin from "./linkedin-svgrepo-com.svg";
 import github from "./github-142-svgrepo-com_1.svg";
 import gmail from "./mail-open-alt-1-svgrepo-com_1.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+
 import './App2.css';
 const Contact = () => {
     const form = useRef();
@@ -69,10 +72,7 @@ const Contact = () => {
           Beirut,Lebanon
         </h4>
         <div className="link1">
-          <img
-            src={gmail}
-            className="logo"
-          />
+        <img src={gmail} className="logo" />
 <a href="mailto:jihan.shamas@gmail.com" style={{ textDecoration: 'none', color:"white", fontSize:"54", ahover:"aqua" }}>
   jihan.shamas@gmail.com
 </a>
@@ -85,10 +85,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="link1">
-          <img
-            src={github}
-            className="logo"
-          />
+        <FontAwesomeIcon icon={faSquareGithub} size="2xl" style={{color:"#68E0CF"}} className='logo'/>
           <a href="https://github.com/JihanSh" className="n">
             github{" "}
           </a>

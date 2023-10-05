@@ -45,7 +45,9 @@ html {
 a:hover {
   color: aqua;
 }
-
+.project a:hover{
+  font-size:22px;
+}
 /* about main div*/
 .aboutmain {
   background: linear-gradient(135deg, #222831 51%, #222831f2 100%); 
