@@ -9,6 +9,7 @@
 #experience{
   background: linear-gradient(135deg, #222831 51%, #4a5668 100%);
   padding-top: 5%;
+  padding-bottom: 3%;
 }
 html{
   scroll-behavior: smooth;
@@ -291,7 +292,7 @@ html{
   width:100px;
   height: 100px; 
   background-color: white;
-  /* border-radius: 50%; */
+  border-radius: 20%;
   border-width: 500px;
   border: 1px solid white;
   

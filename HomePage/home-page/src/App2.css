@@ -34,11 +34,12 @@ html {
 .Jihanname {
   color: white; 
   margin: 0; 
+  float: left;
 }
 .navelements{
   text-decoration: none;
-  color:#cccac9;
-  font-size: 18px;
+  color:#ffffff;
+  font-size: 22px;
 }
 a:hover {
   color: aqua;
@@ -129,23 +130,20 @@ a:hover {
   margin-top: 5%;
 }
 .textdesign {
-  color: #AAA9A8;
+  color: #ffffff;
   font-size: 21px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  text-align: left; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
   margin-left:6%;
   margin-right: 6%;
+  text-align: justify;
 }
 
 .background {
-  background-color:  #41454c98 ;
+  background-color: #5f6061fa;
   text-align: left;
   width: 80%;
   height: 300px;
-  border-radius: 80px 80px;
+  border-radius: 40px;
 }
 
 .imgcontainer {
@@ -307,8 +305,8 @@ color: white;
   justify-content: center;
   align-items: center;
   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.088);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.486);
+  background: rgb(255 255 255 / 25%);
+    box-shadow: 0 4px 30px rgb(153 151 151 / 18%);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 margin-bottom: 3%;
@@ -317,7 +315,7 @@ margin-bottom: 3%;
 .sizeimg {
   width: 220px;
   height: 170px;
-  border-radius: 50px 50px;
+  border-radius: 20px;
 
 }
 
@@ -388,8 +386,9 @@ margin-bottom: 3%;
   margin-left: 15px;
 }
 .project-description {
-  color:rgba(255, 255, 255, 0.546);
+  color: rgba(255, 255, 255, 0.864);
   font-size: 16px;
+  text-align: justify;
 }
 
 @media (max-width: 700px) {
@@ -633,10 +632,10 @@ margin-bottom: 3%;
 .bgcontact2 {
     background-color: #d9d9d923;
     width: 350px;
-    height: 450px;
+    height: 370px;
     border-radius: 80px 80px;
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 4%;
 
 }
 
