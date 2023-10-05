@@ -1,9 +1,13 @@
 import './App2.css';
 import React, { useEffect, useRef, useState } from 'react';
 
-const About = ({ image, description }) => {
+
+const About = () => {
   const [aboutData, setAboutData] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   useEffect(() => {
     fetchAboutData();
@@ -11,13 +15,22 @@ const About = ({ image, description }) => {
 
   const fetchAboutData = () => {
     fetch('http://localhost:5000/About/get')
-      .then((response) => response.json())
-      .then((data) => setAboutData(data.data))
-      .catch((error) => console.log(error));
-  };
-
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (data && data.data) {
+          setAboutData(data.data);
+        } else {
+          console.error('Invalid data format received from the server');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
   };
 
   return (
@@ -32,35 +45,35 @@ const About = ({ image, description }) => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
-        <nav className={`navoptions ${isMenuOpen ? 'open' : ''}`} id="navoptions">
+        <nav className={`nav-list ${isMenuOpen ? 'open' : ''}`}id="navoptions">
           <ul className="nav-list">
             <li>
-              <a href="#about" className="navelements">
+              <a href="#about" id="navoptions"className="navelements">
                 About
               </a>
             </li>
+            <li>
+              <a href="#education" id="navoptions"className="navelements">
+                Education
+              </a>
+            </li>
         <li>
-          <a href="#education" className="navelements">
-            Education
-          </a>
-        </li>
-        <li>
-          <a href="#experience" className="navelements">
+          <a href="#experience" id="navoptions"className="navelements">
             Experience
           </a>
         </li>
         <li>
-          <a href="#Skills" className="navelements">
+          <a href="#Skills" id="navoptions"className="navelements">
             Skills
           </a>
         </li>
         <li>
-          <a href="#projects" className="navelements">
+          <a href="#projects" id="navoptions"className="navelements">
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" className="navelements">
+          <a href="#contact" id="navoptions"className="navelements">
             Contact
           </a>
         </li>

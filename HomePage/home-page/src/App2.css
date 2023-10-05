@@ -161,6 +161,43 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
+    .nav-list {
+     
+        display: none;
+        flex-direction: column;
+        background-color: #aaa9a8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 0;
+        width: 100%; /* Ensure menu takes full width */
+        transition: transform 0.3s ease; /* Add transition effect for smooth appearance */
+      }
+  
+    .nav-list.open {
+      display: flex;
+      transform: translateY(0); /* Move menu into view */
+    }
+  
+    .nav-list li {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hamburger.open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .hamburger.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
  
 
  
@@ -216,23 +253,69 @@ flex: 1;    }
   background-color: aliceblue;
   margin: 5px auto;
 }
+.nav-list li {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
 
 .nav-list {
   display: none;
-  flex-direction: column; 
-  background-color:  #AAA9A8;
+  flex-direction: column;
+  background-color: #aaa9a8;
   position: absolute;
-  top: 60px; 
+  top: 60px;
   left: 0;
   right: 0;
   z-index: 1;
   padding: 0;
-  width:auto;
+  width: 100%; /* Ensure menu takes full width */
+  transition: transform 0.3s ease; /* Add transition effect for smooth appearance */
 }
 
 .show .nav-list {
   display: flex; 
   flex-direction: column; 
+}
+@media screen and (max-width: 700px) {
+  .show .nav-list {
+    display: flex; /* Show the nav links when .show class is applied */
+    flex-direction: column; /* Stack the links vertically */
+}
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #aaa9a8;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+  }
+
+  .nav-list.open {
+    display: flex;
+    transform: translateY(0); /* Move menu into view */
+  }
+
+  .nav-list li {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
 
 }
